@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<body>
+<form action="{% url "profile" %}" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <h2>Profile</h2>
+  {{ form.as_p }}
+  <p>
+    <button type="submit">
+      Save
+    </button>
+  </p>
+</form>
+</body>
+</html>

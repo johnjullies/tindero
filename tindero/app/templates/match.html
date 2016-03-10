@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<body>
+<h2>It's a match!</h2>
+<p>
+  <img src="{{ request.user.userprofile.photo.url }}">
+  <img src="{{ match.userprofile.photo.url }}">
+</p>
+<p>You and {{ match.username }} like each other!</p>
+<p><a href="{% url "index" %}">Play more!</a></p>
+</body>
+</html>

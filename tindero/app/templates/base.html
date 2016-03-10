@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+  <title>Tindero</title>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static "css/main.css" %}">
+</head>
+<body>
+<div class="page">
+  <div class="app">
+    <h1><a href="{% url "index" %}">Tindero</a></h1>
+    {% block content %}{% endblock %}
+  </div>
+</div>
+</body>
+</html>

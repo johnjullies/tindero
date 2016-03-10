@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<body>
+<form action="{% url "register" %}" method="post">
+  {% csrf_token %}
+  <h2>Register</h2>
+  {{ form.as_p }}
+  <p>
+    <button type="submit">
+      Register
+    </button>
+  </p>
+</form>
+</body>
+</html>
